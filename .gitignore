@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Training artifacts (large / regenerable — don't commit)
+checkpoints/
+results/*.png
+results/*.csv
+!results/.gitkeep
+
+# Dataset cache
+*.cache/
+kagglehub/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environments
+.venv/
+venv/
+env/
