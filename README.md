@@ -50,20 +50,6 @@ Sample outputs, the loss curve, and training-progression grids are saved automat
 
 *(Add your own screenshots once training finishes — see the "Reproducing" section below.)*
 
-## Repository Structure
-
-```
-.
-├── notebooks/
-│   └── cyclegan_monet2photo.ipynb   # Full training + inference notebook
-├── assets/
-│   └── architecture.png             # Architecture diagram used in this README
-├── results/                         # Sample grids, loss curves, loss_history.csv (generated on run)
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
-
 The notebook is self-contained: dataset download, model definitions, training loop, logging, and inference all live in one file, organized into numbered sections.
 
 ## Reproducing
@@ -80,11 +66,7 @@ All hyperparameters (epochs, batch size, learning rate, loss weights, checkpoint
 
 ### Local setup (alternative to Colab)
 
-```bash
-pip install -r requirements.txt
-```
-
-Then open `notebooks/cyclegan_monet2photo.ipynb` in Jupyter. Training is significantly slower without a CUDA GPU.
+Open `notebooks/cyclegan_monet2photo.ipynb` in Jupyter. Training is significantly slower without a CUDA GPU.
 
 ## Training Details
 
