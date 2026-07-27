@@ -1,11 +1,10 @@
 # CycleGAN: Monet ↔ Photo Style Transfer
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/notebooks/cyclegan_monet2photo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Morteza-Asadi-Shalmaiy/cyclegan-style-transfer/blob/main/notebooks/cyclegan_monet2photo.ipynb)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-> Replace `YOUR_USERNAME/YOUR_REPO` in the badge link above once this is pushed to GitHub, so the "Open in Colab" button points at your repo.
 
 An implementation of **CycleGAN** (Zhu et al., 2017, [*Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks*](https://arxiv.org/abs/1703.10593)) trained on the [monet2photo](https://www.kaggle.com/datasets/balraj98/monet2photo) dataset to translate between real photographs and Monet-style paintings, without paired training examples.
 
