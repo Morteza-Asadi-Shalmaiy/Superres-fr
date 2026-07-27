@@ -32,6 +32,11 @@ This implementation uses reduced-capacity networks — 32 base channels and 6 re
 
 ## Results
 
+
+<p align="center">
+  <img src="assets/epoch11.png" alt="CycleGAN architecture diagram" width="800">
+</p>
+
 Sample outputs, the loss curve, and training-progression grids are saved automatically during training to `results/` (git-ignored — see [Reproducing](#reproducing) below). After running the notebook, drop your own generated samples here, for example:
 
 ```markdown
