@@ -1,12 +1,20 @@
-# CycleGAN: Monet ↔ Photo Style Transfer
+# CycleGAN-Monet-Photo-Style-Transfer 🎨
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-CycleGAN-EE4C2C?logo=pytorch&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Colab](https://img.shields.io/badge/Run%20in-Colab-F9AB00?logo=googlecolab&logoColor=white)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Morteza-Asadi-Shalmaiy/cyclegan-style-transfer/blob/main/notebooks/cyclegan_monet2photo.ipynb)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
+> **Results at a glance:** Trained **20 epochs** (10 constant + 10 linear decay) on a Colab
+> **T4** GPU · ResNet generators + PatchGAN discriminators · Cycle-consistency + identity
+> loss, 50-image replay buffer · Reduced-capacity nets (32ch/6 blocks) for fast single-GPU training
 
-
-An implementation of **CycleGAN** (Zhu et al., 2017, [*Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks*](https://arxiv.org/abs/1703.10593)) trained on the [monet2photo](https://www.kaggle.com/datasets/balraj98/monet2photo) dataset to translate between real photographs and Monet-style paintings, without paired training examples.
+An implementation of **CycleGAN** (Zhu et al., 2017) trained from scratch on the
+[monet2photo](https://www.kaggle.com/datasets/balraj98/monet2photo) dataset to translate
+between real photographs and Monet-style paintings using only **unpaired** examples — no
+photo needs a matching painting of the same scene. Two ResNet-style generator/discriminator
+pairs are trained jointly with a cycle-consistency loss (`G_BA(G_AB(A)) ≈ A`) and an identity
+loss, and the whole pipeline — dataset download, model definitions, training loop, and
+inference — is self-contained in one notebook.
 
 ---
 
